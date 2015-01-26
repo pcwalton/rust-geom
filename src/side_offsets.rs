@@ -15,7 +15,7 @@ use std::num::Num;
 
 /// A group of side offsets, which correspond to top/left/bottom/right for borders, padding,
 /// and margins in CSS.
-#[deriving(Clone, Copy, PartialEq)]
+#[deriving(Clone, Copy, PartialEq, Encodable, Decodable)]
 pub struct SideOffsets2D<T> {
     pub top: T,
     pub right: T,
